@@ -1,6 +1,10 @@
 function GET(req, res, url, payload) {
-  // throw 'unhandled error';
+  throw 'unhandled error';
   res.json({ message: 'test' });
 }
 
-export { GET };
+function POST(req, res, url, payload) {
+  res.json(payload);
+}
+
+export { GET, POST };
