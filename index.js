@@ -39,6 +39,7 @@ server.on('clientError', (err, socket) => {
 });
 
 server.listen(process.env.PORT || 8080);
+export default server;
 
 process.on('SIGINT', () => {
   server.close((error) => {
@@ -49,4 +50,3 @@ process.on('SIGINT', () => {
   });
 });
 
-export default server;
