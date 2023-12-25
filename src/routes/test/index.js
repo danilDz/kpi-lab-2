@@ -1,5 +1,5 @@
 function GET(req, res, url, payload) {
-  throw 'unhandled error';
+  // throw 'unhandled error';
   res.json({ message: 'test' });
 }
 
