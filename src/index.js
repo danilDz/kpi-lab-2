@@ -48,3 +48,5 @@ process.on('SIGINT', () => {
     }
   });
 });
+
+export default server;
