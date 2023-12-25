@@ -38,7 +38,7 @@ server.on('clientError', (err, socket) => {
   socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
 
-server.listen(8080);
+server.listen(process.env.PORT || 8080);
 
 process.on('SIGINT', () => {
   server.close((error) => {
